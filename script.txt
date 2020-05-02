@@ -1,0 +1,97 @@
+#test box mesh
+box
+0 0 0 200 100 400
+ident
+rotate
+20 x
+rotate
+20 y
+move
+150 200 0
+apply
+save
+box.ppm
+#clear the edge matrix, test the sphere
+clear
+sphere
+0 0 0 200
+save
+sphere.ppm
+#rotate 90 degrees about y to check lines
+ident
+rotate
+90 y
+move
+250 250 0
+apply
+save
+second_sphere.ppm
+#reset sphere, rotate 90 degrees about x to check lines
+ident
+move
+-250 -250 0
+rotate
+-90 y
+rotate
+90 x
+move
+250 250 0
+apply
+save
+third_sphere.ppm
+#reset sphere, rotate to make it look cool
+ident
+move
+-250 -250 0
+rotate
+-60 x
+rotate
+20 y
+rotate
+70 z
+move
+250 250 0
+apply
+save
+fourth_sphere.ppm
+#clear the edge matrix, test torus
+clear
+torus
+0 0 0 25 150
+save
+torus.ppm
+#rotate 90 degrees about y to check lines
+ident
+rotate
+90 y
+move
+250 250 0
+apply
+save
+second_torus.ppm
+#reset torus, rotate 90 degrees about x to check lines
+ident
+move
+-250 -250 0
+rotate
+-90 y
+rotate
+90 x
+move
+250 250 0
+apply
+save
+third_torus.ppm
+#reset torus, rotate to make it look cool
+ident
+move
+-250 -250 0
+rotate
+70 x
+rotate
+20 y
+move
+250 250 0
+apply
+save
+fourth_torus.ppm
